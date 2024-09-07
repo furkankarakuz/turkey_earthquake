@@ -27,6 +27,7 @@ class DataProcess:
         """
         # Set DataFrame
         df = pd.DataFrame(data)
+        df["location"] = df["location"].astype(str)
 
         # Data Filter with Date
         df["day"] = pd.to_datetime(df["day"], format="%Y.%m.%d")
@@ -38,10 +39,10 @@ class DataProcess:
         df = df[(df["magnitude"] >= filter_option["magnitude"]["min"]) & (df["magnitude"] <= filter_option["magnitude"]["max"])]
 
         # Data Filter with Location List
-        if not ("All" in filter_option["location_list"]):
+        if filter_option["location_list"]:
             df_location = pd.DataFrame(columns=df.columns)
             for location in filter_option["location_list"]:
-                df_location = pd.concat([df_location, df[df["location"].str.contains(f"({location})", na=False)]], ignore_index=True)
+                df_location = pd.concat([df_location, df[df["location"].str.contains(f"({location})", na=False)]])
             df = df_location.copy()
         df.sort_index(inplace=True)
         df.drop_duplicates(inplace=True)

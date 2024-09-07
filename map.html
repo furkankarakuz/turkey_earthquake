@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ccfcd9f31b619606f475d203860db454 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ccfcd9f31b619606f475d203860db454" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ccfcd9f31b619606f475d203860db454 = L.map(
+                "map_ccfcd9f31b619606f475d203860db454",
+                {
+                    center: [40.0, 32.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6d2282a6193e53104a7a9571d8ffda18 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_6d2282a6193e53104a7a9571d8ffda18.addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+            var marker_c88bc32bf0ef1decdc2eeed92f0d6588 = L.marker(
+                [37.6607, 35.9272],
+                {}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+        var popup_9d89c2814b0a7e55bc043df4532b20aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_899aaf1727c04169748d05e24b2bb94b = $(`<div id="html_899aaf1727c04169748d05e24b2bb94b" style="width: 100.0%; height: 100.0%;">MAHYALAR-KOZAN (ADANA)</div>`)[0];
+                popup_9d89c2814b0a7e55bc043df4532b20aa.setContent(html_899aaf1727c04169748d05e24b2bb94b);
+            
+        
+
+        marker_c88bc32bf0ef1decdc2eeed92f0d6588.bindPopup(popup_9d89c2814b0a7e55bc043df4532b20aa)
+        ;
+
+        
+    
+    
+            var marker_a69546e1ad3e59bd1984b42a36094387 = L.marker(
+                [37.561, 35.9118],
+                {}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+        var popup_98adf4df250687fb4b4bbc96395e86f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b293c3cd944780b8147d270299540757 = $(`<div id="html_b293c3cd944780b8147d270299540757" style="width: 100.0%; height: 100.0%;">ESKIMANTAS-KOZAN (ADANA)</div>`)[0];
+                popup_98adf4df250687fb4b4bbc96395e86f2.setContent(html_b293c3cd944780b8147d270299540757);
+            
+        
+
+        marker_a69546e1ad3e59bd1984b42a36094387.bindPopup(popup_98adf4df250687fb4b4bbc96395e86f2)
+        ;
+
+        
+    
+    
+            var marker_c45a3d122a8bc734cc20b4a10cb852af = L.marker(
+                [37.6475, 35.8537],
+                {}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+        var popup_59037369ce50db08d831a5cb396b8102 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da5840e0a42f5c465db9636ba11fe375 = $(`<div id="html_da5840e0a42f5c465db9636ba11fe375" style="width: 100.0%; height: 100.0%;">CAMDERE-KOZAN (ADANA)</div>`)[0];
+                popup_59037369ce50db08d831a5cb396b8102.setContent(html_da5840e0a42f5c465db9636ba11fe375);
+            
+        
+
+        marker_c45a3d122a8bc734cc20b4a10cb852af.bindPopup(popup_59037369ce50db08d831a5cb396b8102)
+        ;
+
+        
+    
+    
+            var marker_9f80934ac898616f49e4a8ad6cbc42df = L.marker(
+                [37.6092, 35.9305],
+                {}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+        var popup_5dd174c0b857ed588a294224b6a8188e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41268363b143e0347fb4f4d39d92e4f5 = $(`<div id="html_41268363b143e0347fb4f4d39d92e4f5" style="width: 100.0%; height: 100.0%;">MINNETLI-KOZAN (ADANA)</div>`)[0];
+                popup_5dd174c0b857ed588a294224b6a8188e.setContent(html_41268363b143e0347fb4f4d39d92e4f5);
+            
+        
+
+        marker_9f80934ac898616f49e4a8ad6cbc42df.bindPopup(popup_5dd174c0b857ed588a294224b6a8188e)
+        ;
+
+        
+    
+    
+            var marker_51bb9e03b84ae95756bc40f455a02ddd = L.marker(
+                [39.3793, 23.9245],
+                {}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+        var popup_39f7164970880d338dffa27d73de0290 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c4f1598cf0f38ed4c0eb93230ae5d9ff = $(`<div id="html_c4f1598cf0f38ed4c0eb93230ae5d9ff" style="width: 100.0%; height: 100.0%;">YUNANISTAN</div>`)[0];
+                popup_39f7164970880d338dffa27d73de0290.setContent(html_c4f1598cf0f38ed4c0eb93230ae5d9ff);
+            
+        
+
+        marker_51bb9e03b84ae95756bc40f455a02ddd.bindPopup(popup_39f7164970880d338dffa27d73de0290)
+        ;
+
+        
+    
+    
+            var marker_dd0998f0e1e1ff9255362f51840adbac = L.marker(
+                [40.318, 24.1475],
+                {}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+        var popup_e34972ca496697cc2f9f6b0edc326413 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87052a6ae11f41a6b1fe1731fb45409a = $(`<div id="html_87052a6ae11f41a6b1fe1731fb45409a" style="width: 100.0%; height: 100.0%;">YUNANISTAN</div>`)[0];
+                popup_e34972ca496697cc2f9f6b0edc326413.setContent(html_87052a6ae11f41a6b1fe1731fb45409a);
+            
+        
+
+        marker_dd0998f0e1e1ff9255362f51840adbac.bindPopup(popup_e34972ca496697cc2f9f6b0edc326413)
+        ;
+
+        
+    
+    
+            var marker_71536cafa3dad5aa4a43086f2447c0df = L.marker(
+                [34.795, 24.8612],
+                {}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+        var popup_c7ae941e472c71c43f6adaf06bbeed87 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c35629bdd1da5cb83c9a7d3778ade54b = $(`<div id="html_c35629bdd1da5cb83c9a7d3778ade54b" style="width: 100.0%; height: 100.0%;">GIRIT ADASI ACIKLARI (AKDENIZ)</div>`)[0];
+                popup_c7ae941e472c71c43f6adaf06bbeed87.setContent(html_c35629bdd1da5cb83c9a7d3778ade54b);
+            
+        
+
+        marker_71536cafa3dad5aa4a43086f2447c0df.bindPopup(popup_c7ae941e472c71c43f6adaf06bbeed87)
+        ;
+
+        
+    
+    
+            var marker_9c53e9dfa2a1f19f64bcb47b7d262451 = L.marker(
+                [34.8728, 24.9308],
+                {}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+        var popup_b1ddaa8a5a5d180abb738eb917f85bd9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d76c08c0079219d4b48eb014fed82d6 = $(`<div id="html_4d76c08c0079219d4b48eb014fed82d6" style="width: 100.0%; height: 100.0%;">GIRIT ADASI ACIKLARI (AKDENIZ)</div>`)[0];
+                popup_b1ddaa8a5a5d180abb738eb917f85bd9.setContent(html_4d76c08c0079219d4b48eb014fed82d6);
+            
+        
+
+        marker_9c53e9dfa2a1f19f64bcb47b7d262451.bindPopup(popup_b1ddaa8a5a5d180abb738eb917f85bd9)
+        ;
+
+        
+    
+    
+            var marker_589766f52450955600a7a67d98201dd4 = L.marker(
+                [34.6942, 24.8728],
+                {}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+        var popup_463af1f93483fddcda0dc9469ec3499c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32fa35e3062f590ed77fe44d185939ed = $(`<div id="html_32fa35e3062f590ed77fe44d185939ed" style="width: 100.0%; height: 100.0%;">GIRIT ADASI ACIKLARI (AKDENIZ)</div>`)[0];
+                popup_463af1f93483fddcda0dc9469ec3499c.setContent(html_32fa35e3062f590ed77fe44d185939ed);
+            
+        
+
+        marker_589766f52450955600a7a67d98201dd4.bindPopup(popup_463af1f93483fddcda0dc9469ec3499c)
+        ;
+
+        
+    
+    
+            var marker_9ff266f45a5ad61c605b5cbe32014405 = L.marker(
+                [40.1525, 23.8247],
+                {}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+        var popup_bd84ca436e7685870d3db3f788ddea49 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80137d865e817ee68802f270e392409a = $(`<div id="html_80137d865e817ee68802f270e392409a" style="width: 100.0%; height: 100.0%;">YUNANISTAN</div>`)[0];
+                popup_bd84ca436e7685870d3db3f788ddea49.setContent(html_80137d865e817ee68802f270e392409a);
+            
+        
+
+        marker_9ff266f45a5ad61c605b5cbe32014405.bindPopup(popup_bd84ca436e7685870d3db3f788ddea49)
+        ;
+
+        
+    
+    
+            var marker_4e213c10397cf9f10938418241d6b19f = L.marker(
+                [36.1725, 28.895],
+                {}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+        var popup_419992d3d0b88754f57656279424cac6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_004355a775f8faae6c204cf8a78eb57c = $(`<div id="html_004355a775f8faae6c204cf8a78eb57c" style="width: 100.0%; height: 100.0%;">AKDENIZ</div>`)[0];
+                popup_419992d3d0b88754f57656279424cac6.setContent(html_004355a775f8faae6c204cf8a78eb57c);
+            
+        
+
+        marker_4e213c10397cf9f10938418241d6b19f.bindPopup(popup_419992d3d0b88754f57656279424cac6)
+        ;
+
+        
+    
+    
+            var marker_eed5a07a796a89ef6c21b3b996ce5fa2 = L.marker(
+                [35.3403, 33.7767],
+                {}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+        var popup_29465d702a0b60c9b7ca5078cdec1af0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f59e9ae2852825a9fb9e1ddf300e887 = $(`<div id="html_6f59e9ae2852825a9fb9e1ddf300e887" style="width: 100.0%; height: 100.0%;">KIBRIS-ISKELE</div>`)[0];
+                popup_29465d702a0b60c9b7ca5078cdec1af0.setContent(html_6f59e9ae2852825a9fb9e1ddf300e887);
+            
+        
+
+        marker_eed5a07a796a89ef6c21b3b996ce5fa2.bindPopup(popup_29465d702a0b60c9b7ca5078cdec1af0)
+        ;
+
+        
+    
+    
+            var marker_3e432fdf504eb8d3f1966d573dd24d7c = L.marker(
+                [36.8747, 27.7328],
+                {}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+        var popup_6fff0e17fb0ae89f2e86c83231e9b45f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_803536e35087f394080275d56dec2c77 = $(`<div id="html_803536e35087f394080275d56dec2c77" style="width: 100.0%; height: 100.0%;">GOKOVA KORFEZI (AKDENIZ)</div>`)[0];
+                popup_6fff0e17fb0ae89f2e86c83231e9b45f.setContent(html_803536e35087f394080275d56dec2c77);
+            
+        
+
+        marker_3e432fdf504eb8d3f1966d573dd24d7c.bindPopup(popup_6fff0e17fb0ae89f2e86c83231e9b45f)
+        ;
+
+        
+    
+    
+            var marker_401d327721a9282250ab0aa66eff20bb = L.marker(
+                [39.4657, 23.7435],
+                {}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+        var popup_986d999c729dec04d2e6cca51447efa6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb2a158ed0e58b16b6331e89c01fc789 = $(`<div id="html_fb2a158ed0e58b16b6331e89c01fc789" style="width: 100.0%; height: 100.0%;">YUNANISTAN</div>`)[0];
+                popup_986d999c729dec04d2e6cca51447efa6.setContent(html_fb2a158ed0e58b16b6331e89c01fc789);
+            
+        
+
+        marker_401d327721a9282250ab0aa66eff20bb.bindPopup(popup_986d999c729dec04d2e6cca51447efa6)
+        ;
+
+        
+    
+    
+            var marker_52a4318279fd527cadbf062988b82013 = L.marker(
+                [36.1398, 28.8615],
+                {}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+        var popup_9d28108df727fe9eb086ae159adf3713 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc73eb15439ae391c23a040765831766 = $(`<div id="html_fc73eb15439ae391c23a040765831766" style="width: 100.0%; height: 100.0%;">AKDENIZ</div>`)[0];
+                popup_9d28108df727fe9eb086ae159adf3713.setContent(html_fc73eb15439ae391c23a040765831766);
+            
+        
+
+        marker_52a4318279fd527cadbf062988b82013.bindPopup(popup_9d28108df727fe9eb086ae159adf3713)
+        ;
+
+        
+    
+    
+            var marker_b34c4321542c21d223698f58cf0be8fb = L.marker(
+                [36.1225, 28.8883],
+                {}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+        var popup_17ba354189032d50463982258ddc5ba2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_080d35f6185b35ab76ccf5583946fc27 = $(`<div id="html_080d35f6185b35ab76ccf5583946fc27" style="width: 100.0%; height: 100.0%;">AKDENIZ</div>`)[0];
+                popup_17ba354189032d50463982258ddc5ba2.setContent(html_080d35f6185b35ab76ccf5583946fc27);
+            
+        
+
+        marker_b34c4321542c21d223698f58cf0be8fb.bindPopup(popup_17ba354189032d50463982258ddc5ba2)
+        ;
+
+        
+    
+    
+            var marker_af4826c296e355ebb5c96282316cc658 = L.marker(
+                [36.1897, 28.8913],
+                {}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+        var popup_6d5a5f406c4aa50519db4e8c5cb032f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0d5bf2e7621fa7ebe8e0f68b7723ac7 = $(`<div id="html_b0d5bf2e7621fa7ebe8e0f68b7723ac7" style="width: 100.0%; height: 100.0%;">AKDENIZ</div>`)[0];
+                popup_6d5a5f406c4aa50519db4e8c5cb032f0.setContent(html_b0d5bf2e7621fa7ebe8e0f68b7723ac7);
+            
+        
+
+        marker_af4826c296e355ebb5c96282316cc658.bindPopup(popup_6d5a5f406c4aa50519db4e8c5cb032f0)
+        ;
+
+        
+    
+    
+            var marker_e03b748ea0ceddcca72d841586472e11 = L.marker(
+                [40.3342, 24.1012],
+                {}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+        var popup_28edd856644b43419a14d874ee322652 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65ba3bf4b9740f08c6325a34e198f588 = $(`<div id="html_65ba3bf4b9740f08c6325a34e198f588" style="width: 100.0%; height: 100.0%;">YUNANISTAN</div>`)[0];
+                popup_28edd856644b43419a14d874ee322652.setContent(html_65ba3bf4b9740f08c6325a34e198f588);
+            
+        
+
+        marker_e03b748ea0ceddcca72d841586472e11.bindPopup(popup_28edd856644b43419a14d874ee322652)
+        ;
+
+        
+    
+    
+            var marker_359ce35a98eb0977f8f9643c4aa4088d = L.marker(
+                [34.904, 38.847],
+                {}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+        var popup_23b99f16e51d879062947e85efab184e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c71fbf547701f0d68e8aa108309b961 = $(`<div id="html_5c71fbf547701f0d68e8aa108309b961" style="width: 100.0%; height: 100.0%;">SURIYE</div>`)[0];
+                popup_23b99f16e51d879062947e85efab184e.setContent(html_5c71fbf547701f0d68e8aa108309b961);
+            
+        
+
+        marker_359ce35a98eb0977f8f9643c4aa4088d.bindPopup(popup_23b99f16e51d879062947e85efab184e)
+        ;
+
+        
+    
+    
+            var circle_marker_bfdaf5cde8e71d55bc5790f25cddf6f7 = L.circleMarker(
+                [37.6607, 35.9272],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.0, "stroke": true, "weight": 3}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+            var circle_marker_46f659257560a3ac81ff05aad79ead3e = L.circleMarker(
+                [37.561, 35.9118],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.5, "stroke": true, "weight": 3}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+            var circle_marker_2e0ad88e0471f402541eccf187352ef8 = L.circleMarker(
+                [37.6475, 35.8537],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+            var circle_marker_5fafc5e5773be17b85804cf140a615e6 = L.circleMarker(
+                [37.6092, 35.9305],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.5, "stroke": true, "weight": 3}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+            var circle_marker_120c616cc18abab35f5dc57c0a0bf2cc = L.circleMarker(
+                [39.3793, 23.9245],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.5, "stroke": true, "weight": 3}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+            var circle_marker_b8f9403f823ccf18c7c8c8da4121fdec = L.circleMarker(
+                [40.318, 24.1475],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.5, "stroke": true, "weight": 3}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+            var circle_marker_f367f1012ec99cf1a4af60056386e5da = L.circleMarker(
+                [34.795, 24.8612],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.5, "stroke": true, "weight": 3}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+            var circle_marker_0087550931b44ee945ebb8714d449d75 = L.circleMarker(
+                [34.8728, 24.9308],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+            var circle_marker_fabc2de9256ea4fbd5486eb6d133552e = L.circleMarker(
+                [34.6942, 24.8728],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.5, "stroke": true, "weight": 3}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+            var circle_marker_e6adcd61144018e2f066efdb9b0550d6 = L.circleMarker(
+                [40.1525, 23.8247],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.5, "stroke": true, "weight": 3}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+            var circle_marker_a86ccbd51dfd775ffc86ed6bcd9e161d = L.circleMarker(
+                [36.1725, 28.895],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.0, "stroke": true, "weight": 3}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+            var circle_marker_0682f520e14b57a3d6ded5e38935378d = L.circleMarker(
+                [35.3403, 33.7767],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.5, "stroke": true, "weight": 3}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+            var circle_marker_1617c2f69e9da400e704624de4d58b30 = L.circleMarker(
+                [36.8747, 27.7328],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.0, "stroke": true, "weight": 3}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+            var circle_marker_8c88c10ef28c0ea2902653fe1aaac8ee = L.circleMarker(
+                [39.4657, 23.7435],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.0, "stroke": true, "weight": 3}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+            var circle_marker_e8bc88d2d576266f4b377bc02fee7d05 = L.circleMarker(
+                [36.1398, 28.8615],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.5, "stroke": true, "weight": 3}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+            var circle_marker_c4e824df676df3b7cbee3d62b2bfa3dc = L.circleMarker(
+                [36.1225, 28.8883],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.5, "stroke": true, "weight": 3}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+            var circle_marker_a6f94dc4c526856fc19f4f94886e4f83 = L.circleMarker(
+                [36.1897, 28.8913],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.0, "stroke": true, "weight": 3}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+            var circle_marker_283a829a0ab6e4704c656e7c8f9dcac2 = L.circleMarker(
+                [40.3342, 24.1012],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.0, "stroke": true, "weight": 3}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+    
+            var circle_marker_ff2772e1fec43539dea5243f60f8d991 = L.circleMarker(
+                [34.904, 38.847],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.0, "stroke": true, "weight": 3}
+            ).addTo(map_ccfcd9f31b619606f475d203860db454);
+        
+</script>
+</html>

@@ -39,7 +39,6 @@ class MapVisualizationProcess():
         Returns:
             None: The map is saved as an HTML file ('map.html').
         """
-
         if viz_type == "Marker":
             df.apply(lambda row: folium.Marker(location=[row['lat'], row['lng']], popup=row['location']).add_to(self.m), axis=1)
             df.apply(lambda row: folium.CircleMarker(location=[row['lat'], row['lng']], radius=row['magnitude'] * 5, fill_color='red', fill=True, fill_opacity=0.6).add_to(self.m), axis=1)
