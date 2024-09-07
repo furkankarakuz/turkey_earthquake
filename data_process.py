@@ -12,7 +12,7 @@ class DataProcess:
     def __init__(self):
         pass
 
-    def data_filter(self, data, start_date: datetime, end_date: datetime, filter_option: dict):
+    def data_filter(self, data, start_date: datetime, end_date: datetime, filter_option: dict) -> pd.DataFrame:
         """
         Filters the earthquake data based on date range, depth, magnitude, and location.
 
@@ -41,8 +41,9 @@ class DataProcess:
         if not ("All" in filter_option["location_list"]):
             df_location = pd.DataFrame(columns=df.columns)
             for location in filter_option["location_list"]:
-                df_location = pd.concat([df_location, df[df["location"].str.contains(f"({location})", na=False)]])
+                df_location = pd.concat([df_location, df[df["location"].str.contains(f"({location})", na=False)]], ignore_index=True)
             df = df_location.copy()
-            df.sort_index(inplace=True)
-            df.drop_duplicates(inplace=True)
+        df.sort_index(inplace=True)
+        df.drop_duplicates(inplace=True)
+        df.reset_index(inplace=True)
         return df
