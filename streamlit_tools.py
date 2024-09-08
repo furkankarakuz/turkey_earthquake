@@ -2,6 +2,8 @@ from datetime import datetime, timedelta
 from city_list import city_list
 import streamlit as st
 
+st.set_page_config(layout="wide")
+
 
 class StreamlitTools():
     """

@@ -29,8 +29,8 @@ def run_filter_button():
 
 def display_data(dataframe):
     """Display the filtered data and the visualization map."""
-    st.dataframe(dataframe[["day", "time", "magnitude", "depth", "location"]], width=1000)
-    st.components.v1.html(open('map.html', 'r').read(), width=1000, height=600)
+    st.dataframe(dataframe[["day", "time", "magnitude", "depth", "location"]], use_container_width=True)
+    st.components.v1.html(open('map.html', 'r').read(), width=None, height=st.session_state.get('map_height', 800))
 
 
 def display_no_data():
