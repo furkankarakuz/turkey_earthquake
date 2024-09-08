@@ -12,12 +12,12 @@ class DataProcess:
     def __init__(self):
         pass
 
-    def data_filter(self, data, start_date: datetime, end_date: datetime, filter_option: dict) -> pd.DataFrame:
+    def data_filter(self, data: list[dict], start_date: datetime, end_date: datetime, filter_option: dict) -> pd.DataFrame:
         """
         Filters the earthquake data based on date range, depth, magnitude, and location.
 
         Args:
-            data (list): List of dictionaries containing earthquake data.
+            data (list[dict]): List of dictionaries containing earthquake data.
             start_date (datetime): Start date for filtering the data.
             end_date (datetime): End date for filtering the data.
             filter_option (dict): Dictionary containing filtering options such as depth, magnitude, and location list.
