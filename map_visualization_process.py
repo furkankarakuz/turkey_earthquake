@@ -12,7 +12,7 @@ class MapVisualizationProcess():
         m (folium.Map): The Folium map object to which visualizations are added.
     """
 
-    def __init__(self, zoom: int = 5) -> None:
+    def __init__(self, zoom: int = 6) -> None:
         """
         Initializes the MapVisualizationProcess class with a given zoom level.
 
