@@ -17,7 +17,7 @@ class RequestProcess:
         """
         self.url = URL
 
-    def get_request(self, start_date: datetime, end_date: datetime) -> list:
+    def get_request(self, start_date: datetime, end_date: datetime) -> list[dict]:
         """
         Retrieves earthquake data within the specified date range.
 
@@ -26,7 +26,7 @@ class RequestProcess:
             end_date (datetime): End date for earthquake data.
 
         Returns:
-            list: A list of dictionaries containing earthquake data.
+            Optional[list[dict]]: A list of dictionaries containing earthquake data, or None if an error occurs.
         """
         data = []
         try:
