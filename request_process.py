@@ -1,6 +1,6 @@
-from config import URL
 from bs4 import BeautifulSoup as bs
 from datetime import datetime
+from streamlit_tools import secret_url
 
 import requests
 
@@ -15,7 +15,7 @@ class RequestProcess:
             month_range(start_date: datetime, end_date: datetime) -> list
             get_monthly_data(monthly_data: dict) -> dict
         """
-        self.url = URL
+        self.url = secret_url
 
     def get_request(self, start_date: datetime, end_date: datetime) -> list[dict]:
         """
