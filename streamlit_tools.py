@@ -2,8 +2,10 @@ from datetime import datetime, timedelta
 from city_list import city_list
 import streamlit as st
 
-secret_url = st.secrets["URL"]
+
 st.set_page_config(layout="wide")
+secret_url = st.secrets["URL"]
+
 
 
 class StreamlitTools():
