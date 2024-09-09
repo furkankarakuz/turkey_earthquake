@@ -30,7 +30,7 @@ def run_filter_button():
 def display_data(dataframe):
     """Display the filtered data and the visualization map."""
     st.dataframe(dataframe[["day", "time", "magnitude", "depth", "location"]], use_container_width=True)
-    st.components.v1.html(open('map.html', 'r').read(), width=None, height=st.session_state.get('map_height', 800))
+    st.components.v1.html(open('map.html', 'r').read(), width=None, height=st.session_state.get('map_height', 650))
 
 
 def display_no_data():
@@ -62,7 +62,10 @@ def main():
             display_data(dataframe)
         else:
             # Display message if no data
+            st.title("Please")
             display_no_data()
+    else:
+        st.markdown("<center><h5>Please Press Run Button to See The Result</h5></center>", unsafe_allow_html=True)
 
 
 if __name__ == "__main__":
