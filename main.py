@@ -62,7 +62,6 @@ def main():
             display_data(dataframe)
         else:
             # Display message if no data
-            st.title("Please")
             display_no_data()
     else:
         st.markdown("<center><h5>Please Press Run Button to See The Result</h5></center>", unsafe_allow_html=True)
