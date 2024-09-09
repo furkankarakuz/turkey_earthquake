@@ -7,7 +7,6 @@ st.set_page_config(layout="wide")
 secret_url = st.secrets["URL"]
 
 
-
 class StreamlitTools():
     """
     A class to handle the Streamlit sidebar tools for filtering and visualizing earthquake data.
