@@ -40,7 +40,8 @@ class StreamlitTools():
         today = datetime.now()
         yesterday = today - timedelta(days=1)
         date_range = st.sidebar.date_input("Select date range", (yesterday, today), datetime(2020, 1, 1), today, format="DD.MM.YYYY")
-        self.date_range = datetime(date_range[0].year, date_range[0].month, date_range[0].day), datetime(date_range[1].year, date_range[1].month, date_range[1].day)
+        if date_range[0] and date_range[1]:
+            self.date_range = datetime(date_range[0].year, date_range[0].month, date_range[0].day), datetime(date_range[1].year, date_range[1].month, date_range[1].day)
 
     def _select_visualization_type(self):
         """Creates a radio button widget for selecting the type of visualization (Marker, Cluster, HeatMap)."""
