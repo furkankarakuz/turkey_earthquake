@@ -1,14 +1,13 @@
 from request_process import RequestProcess as rp
 from data_process import DataProcess as dp
 from map_visualization_process import MapVisualizationProcess
-from streamlit_tools import StreamlitTools
+from streamlit_tools import StreamlitTools, st
 
-
-import streamlit as st
 import warnings
 
 
 warnings.filterwarnings('ignore')
+st.set_page_config(layout="wide")
 
 
 def display_title():
